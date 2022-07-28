@@ -9,13 +9,13 @@ export default function NavBar (){
  
     return (
         <>
-        <Box bg={'red.300'}>
-        <Flex h={20} alignItems={'center'} justifyContent={'space-around'}>
+        <Box w="85%" maxW={"85%"} bg={'red.300'}>
+        <Flex px={6} h={20} alignItems={'center'} justifyContent={'space-between'}>
         <HStack spacing={6} alignItems={'center'}>
                 <Logo/>
                 <InputGroup>
                     <InputLeftElement
-                    children={<SearchIcon  w={5} h={5} color='gray.300'/>}
+                    children={<SearchIcon fontSize={"1.7rem"} color='gray.300'/>}
                     />
                     <Input size='lg' type="text" placeholder="Search by name"  _placeholder={{ opacity: 1, color: 'gray.300' }}/>
                 </InputGroup>
